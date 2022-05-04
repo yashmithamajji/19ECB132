@@ -3,8 +3,8 @@ This instructor repo is created as part of the course tiled "Data Structures and
 
 ## Index  
 [01_letter_count.c](01_letter_count.c)  
-[02_insertion_sort.c](02_insertion_sort.c)
-[03_linear_data_structures.c](03_linear_data_structures.c)
-[04_linked_list.c](04_linked_list.c)
-[05_assignment_01.c](05_assignment_01.c)
-[06_binary_tree.c](06_binary_tree.c)
+[02_insertion_sort.c](02_insertion_sort.c)  
+[03_linear_data_structures.c](03_linear_data_structures.c)  
+[04_linked_list.c](04_linked_list.c)  
+[05_assignment_01.c](05_assignment_01.c)  
+[06_binary_tree.c](06_binary_tree.c)  
