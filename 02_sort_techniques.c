@@ -4,7 +4,7 @@
 int input[10] = {10, 9, 8, 7, 6, 5, 1, 2, 3, 4};
   // Elements are hard coded
 void menu() {
-  printf("\n1. Insertion Sort \n2. Merge Sort \n3. Quick Sort \n9. Exit");
+  printf("\n1. Insertion Sort \n2. Merge Sort \n3. Quick Sort \n4. Selection Sort  \n9. Exit");
 }
 
 /* Insertion Sort Algorithm
@@ -25,15 +25,32 @@ void insertion_sort() {
     }
     input[j+1] = element;
   }
+}
 
+void selection_sort() {
+  int minimum_value_index;
+  for (int i=0; i<9; i++) {
+     minimum_value_index = i;
+    for (int j = i+1; j<10; j++) {
+      if (input[j] < input[minimum_value_index])
+          minimum_value_index = j;
+    }
+    // swap the minimum element with the first element
+    int temp = input[minimum_value_index];
+    input[minimum_value_index] = input[i];
+    input[i] = temp;
+  }
+}
+
+void print_array(){
   printf("\nElements after sorting are ...\n");
   for(int i=0; i<10; i++)
     printf("%d\t", input[i]);
+  printf("\n");
 }
 
 int main(void) {
   int choice=0;
-  while (1) {
     menu();
     printf("\nSelect the sorting technique: ");
     scanf("%d", &choice);
@@ -45,12 +62,16 @@ int main(void) {
               break;
       case 3: printf("\n**Quick Sort**");
               break;
+      case 4: printf("\n**Selection Sort**");
+              selection_sort();
+              break;
       case 9: return 0;
       
       default: printf("Invalid choice");
       
     }
-  }
+  print_array();
+
 }
 
 
