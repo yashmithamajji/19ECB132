@@ -13,3 +13,4 @@ This instructor repo is created as part of the course tiled "Data Structures and
 [09_b_tree.c](09_b_tree.c)  
 [10_avl_tree.c](10_avl_tree.c)  
 [11_splay_tree.c](11_splay_tree.c)  
+[12_hash_table.c](12_hash_table.c)  
